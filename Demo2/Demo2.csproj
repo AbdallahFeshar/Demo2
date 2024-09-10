@@ -5,7 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="WWWroot\Css\" />
+    <Folder Include="WWWroot\JS\" />
+    <Folder Include="WWWroot\Lib\" />
   </ItemGroup>
 
 </Project>
