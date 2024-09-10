@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    
+    <nav class="mt-5">
+        <center>
+            <a href="/Home/Index" class="btn btn-primary">Home</a>
+            <a href="/Home/AboutUs" class="btn btn-warning">About Us</a>
+            <a href="/Home/Privacy" class="btn btn-success">Privacy</a>
+            <a href="/Home/ContactUs" class="btn btn-light">Contact Us</a>
+            <a href="/Account/Login" class="btn btn-danger">Login</a>
+            <a href="/Account/Register" class="btn btn-info">Register</a>
+@*             @Html.ActionLink("Home","Index","Home")
+    
+ *@
+            @* <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Home</a> *@
+        
+        </center>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+     @*Start Footer *@
+        <footer>
+            <Center>
+                <div>
+                    <p>copyrights &copy; for router @DateTime.Now.Year</p>
+                </div>
+            </Center>
+    @*End Footer *@
+</body>
+</html>
